@@ -329,7 +329,7 @@ function Home() {
         <Container data-aos="fade-up">
           <h2>Resume</h2>
           <p>Download my latest resume here:</p>
-          <Button href="/AIBEL BABU RESUME fr.pdf" target="_blank" variant="primary">Download PDF</Button>
+          <Button href="/Aibel's Resume fr.pdf" target="_blank" variant="primary">Download PDF</Button>
         </Container>
       </section>
 
