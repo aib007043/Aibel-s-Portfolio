@@ -1,0 +1,240 @@
+* {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+ 
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.section {
+  transition: background 0.5s, color 0.5s;
+}
+
+.btn {
+  transition: all 0.3s ease;
+}
+.interest-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border: none;
+  overflow: hidden;
+}
+
+.interest-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+}
+
+.gradient-border {
+  background: linear-gradient(to right, #f0f8ff, #e0f7fa);
+  border: 2px solid transparent;
+  border-image: linear-gradient(to right, #6dd5fa, #2980b9) 1;
+  border-radius: 10px;
+}
+
+.interest-image {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.interest-card:hover .interest-image {
+  transform: scale(1.05);
+}
+
+.icon-animated i {
+  animation: iconFade 2s infinite;
+}
+
+@keyframes iconFade {
+  0% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.8; }
+}
+.bg-hero {
+  background: linear-gradient(to right, #1a2980, #26d0ce);
+  color: white;
+}
+
+.feature-box {
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-6px);
+}
+
+.animated-icon {
+  animation: iconBounce 2s infinite;
+}
+
+@keyframes iconBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.typewriter-text {
+  font-family: monospace;
+  border-right: 2px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: blinkCursor 0.8s steps(1) infinite;
+}
+
+@keyframes blinkCursor {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: white; }
+}
+
+.scroll-down {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
+body, .dark-mode {
+  background-color: #0d1117 !important;
+  color: #f0f6fc;
+}
+
+.bg-hero {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+}
+
+.feature-box {
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-6px);
+}
+
+.animated-icon {
+  animation: iconBounce 2s infinite;
+}
+
+@keyframes iconBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.typewriter-text {
+  font-family: monospace;
+  border-right: 2px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: blinkCursor 0.8s steps(1) infinite;
+}
+
+@keyframes blinkCursor {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: white; }
+}
+
+.scroll-down {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
+
+.border-glow {
+  border: 1px solid #0ff;
+  box-shadow: 0 0 12px #0ff;
+}
+
+.hover-glow:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 0 20px #0ff;
+  transition: 0.3s ease;
+}
+.border-glow {
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  transition: box-shadow 0.3s ease;
+}
+.hover-glow:hover {
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 123, 255, 0.2);
+  transition: all 0.3s ease;
+}
+.project-img {
+  transition: transform 0.3s ease;
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+
+.project-img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+#techstack ul {
+  list-style-type: "🔹 ";
+  padding-left: 1.5rem;
+  font-size: 0.95rem;
+}
+
+#techstack h5 {
+  font-weight: 600;
+  border-left: 4px solid #0dcaf0;
+  padding-left: 0.5rem;
+}
+.border-glow {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+.more-about-btn {
+  background: linear-gradient(135deg, #ff6a00, #ee0979);
+  color: white !important;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(255, 106, 0, 0.4);
+}
+
+.more-about-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(238, 9, 121, 0.6), 0 0 25px rgba(255, 106, 0, 0.6);
+  color: #fff;
+}
+.contact-section {
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+}
+
+.bg-gradient-card {
+  background: linear-gradient(to right, #141e30, #243b55);
+  border-radius: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bi-instagram.text-pink {
+  color: #e1306c;
+}
+
+
+
